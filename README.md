@@ -11,18 +11,22 @@ $ cd NLP-2017
 $ pip install -r requirements.txt
 $ python jasmineqtang_TC.py
 ```
+All training/test files should stay in TC_provided directory.
+
 
 ## ML Method 
-The method used is Naive Bayes
+The method used is Naive Bayes as shown in class. 
 
-## Tokenizer 
-Porter Stemmer tokenizer
+## Parsing/Tokenizer then Stemming
+For training and test sets, the document was taken in and the command 'splitlines()' was used. From there, the training sets would use word tokenizer, which is a built in tool in thes nltk library, to split between the names of the article and it's label. 
+In the article, word tokenizer would also be used to determine the word. Then the word was then put into the Porter Stemmer to obtain the stem of the word. The Porter Stemmer is considered a gentler stemmer in comparison to the Lancaster Stemmer. With the stem of the word, we can associate words with the category for the Naive Bayes Approach. 
+The last step before adding words to any form of hash table/having it factor into the probabilities, 'if tok in list[string.punctuation]' got rid of the punctuation and continued to the next iteration of the for loop. 
 
 ## Weighting Scheme 
 
 
 ## Smoothing 
-Laplacian Smoothing
+Laplacian Smoothing with k at 0.05. 
 
 ## Optional Parameters
 
