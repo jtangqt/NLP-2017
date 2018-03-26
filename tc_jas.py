@@ -4,8 +4,6 @@ from nltk.stem import PorterStemmer
 from math import log
 import string
 
-nltk.download('popular')
-
 def tc(training_file_name, test_file_name):
 	k = 0.06
 
@@ -94,7 +92,7 @@ def tc(training_file_name, test_file_name):
 		len_vocab = len(d_tmp)
 		cat_prob = dict()
 
-		#Do Naive Bayes
+		#Naive Bayes + smoothing
 		for cat in set_cat:
 			total_cat_prob = 0
 			prior = d_prior[cat]/num_train_files
@@ -107,6 +105,8 @@ def tc(training_file_name, test_file_name):
 					word_count_given_cat = k
 
 				total_cat_prob += count*log(word_count_given_cat/normalizer)
+			
+			#do the smoothing 
 			cat_prob[cat] = total_cat_prob + log(prior)
 
 		res = max(cat_prob, key = cat_prob.get)
