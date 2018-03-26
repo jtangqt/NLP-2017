@@ -96,7 +96,7 @@ def tc(training_file_name, test_file_name):
 		for cat in set_cat:
 			total_cat_prob = 0
 			prior = d_prior[cat]/num_train_files
-			normalizer = d_cat[cat] + k*len_vocab
+			mag = d_cat[cat] + k*len_vocab
 
 			for word, count in d_tmp.iteritems():
 				if(cat, word) in d_word_cat:
@@ -104,7 +104,7 @@ def tc(training_file_name, test_file_name):
 				else:
 					word_count_given_cat = k
 
-				total_cat_prob += count*log(word_count_given_cat/normalizer)
+				total_cat_prob += count*log(word_count_given_cat/mag)
 			
 			#do the smoothing 
 			cat_prob[cat] = total_cat_prob + log(prior)
