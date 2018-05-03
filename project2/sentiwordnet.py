@@ -3,10 +3,7 @@
 ## map of synterms (key = term, element = hash map of synterm rank as key and score object)
 ## return map from above and use it as a lookup table after POS tagging and Lesk Algorithm 
 
-import nltk
-from nltk.corpus import wordnet as wn
-from nltk.wsd import lesk
-
+import pickle
 
 class score:
 	def __init__(self, pos, neg):
@@ -39,39 +36,4 @@ def create_senti_dict():
 
 	return senti_dict
 
-
-
-sentence = 'that book is atrocious and i hope that no one ever reads it!!!'.split()
-pos = [nltk.pos_tag(sentence)]
-print(pos)
-print sentence
-        #adapt format
-pos = [[(word, word, [postag]) for (word, postag) in val] for val in pos]
-print(pos)
-
-print sentence
-
-hehe = create_senti_dict()
-
-print wn.synsets('atrocious')
-for word in wn.synsets('atrocious'):
-	ss = lesk(sentence, 'atrocious')
-	print word.definition()
-	word, POS, rank = ss.name().split(".")
-	if POS == 's':
-		POS = 'a'
-	synterm = word + "#" + POS
-	print hehe[synterm][rank.lstrip("0")].pos + " " + hehe[synterm][rank.lstrip("0")].neg
-	print ss.definition()
-#print hehe['atrocious#s']
-
-for char in sentence:
-	ss = lesk(sentence, char)
-	if ss:
-		print(ss.name())
-		word, POS, rank = ss.name().split(".")
-		if POS == 's':
-			POS = 'a'
-		synterm = word + "#" + POS
-		print hehe[synterm][rank.lstrip("0")].pos + " " + hehe[synterm][rank.lstrip("0")].neg
-		print ss.definition()
+pickle.dump(create_senti_dict(), open("sentiwordnet.p", "wb"))

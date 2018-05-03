@@ -38,3 +38,9 @@ http://swat.cse.lehigh.edu/pubs/zhang10a.pdf
 https://framenet.icsi.berkeley.edu/fndrupal/WhatIsFrameNet
 https://www.nltk.org/book/ch05.html
 https://www.cse.iitb.ac.in/~pb/papers/lrec16-slangnet.pdf
+
+
+## Some Quality Sentences
+sentence = 'As for the spectacle of the battle and showdowns, while not at the scale of Lord of the Rings, I honestly cant think how it could have been done better as the film makers have intertwined heart stopping action with dramatic progressions in the narrative. Its actually more visceral and dynamic than the rather smaller scale battle of the brilliant novels (not to take anything away from Rowlings writing). Do I have any gripes? Yes I do. Although I applaud Steve Kloves for a difficult screenplay adaption...I think he could still have done better at explaining some odd anomalies that only readers of the book will understand. This might annoy you if you havent read the books. But its a small gripe because what we get is delightful. What an amazing achievement to faithfully bring Rowlings epic saga to the big screen with the same cast and largely the same crew, maintaining the brilliant quality right to the end.'.split()
+
+sentence = 'This is quite possibly the worst movie ever made. Even my 4 year old hated it and wanted to leave. I was using it as an excuse to nap in air-conditioning. Alas, it was so bad that my daughter insisted we leave. Not really a surprise for a Steven Paul film, but Im saddened that Jon Voights career has fallen so low...and Scott Baio??? ARGH! Believe me, Ive had to sit through some bad kid flix, but this one is an all time loser. There is a woman with very large lips (Vanessa Angel) who almost makes it bearable, just for the pure fascination of watching whether or not they will explode. However, my suggestion would be that all prints of this film be sent to President Bush so he can see how harmful his education budget cuts have been.'.split()
