@@ -27,3 +27,14 @@ Other resources I’ve found:
 http://fjavieralba.com/basic-sentiment-analysis-with-python.html -- shows a tutorial of a very rudimentary sentimental analysis program
 http://www.nltk.org/book/ch05.html -- shows more information about POS-tagging
 http://nlpforhackers.io/training-pos-tagger/ -- more POS-tagging info
+
+
+http://www.nltk.org/howto/wsd.html
+http://www.nltk.org/howto/wordnet.html
+https://web.stanford.edu/~jurafsky/slp3/18.pdf
+https://github.com/kevincobain2000/sentiment_classifier/blob/master/src/senti_classifier/senti_classifier.py
+http://text-processing.com/docs/sentiment.html
+http://swat.cse.lehigh.edu/pubs/zhang10a.pdf
+https://framenet.icsi.berkeley.edu/fndrupal/WhatIsFrameNet
+https://www.nltk.org/book/ch05.html
+https://www.cse.iitb.ac.in/~pb/papers/lrec16-slangnet.pdf
