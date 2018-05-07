@@ -29,8 +29,6 @@ def create_senti_dict():
 	 		tmp_score = score(p_score, n_score)
 	 		if synterm in senti_dict:
 	 			senti_dict[synterm][rank] = tmp_score
-	 			# print("hi")
-	 			# print rank + " " + tmp_score.pos + " " + tmp_score.neg
 	 		else:
 	 			senti_dict[synterm] = {rank: tmp_score}
 
