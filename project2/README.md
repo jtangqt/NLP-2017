@@ -17,8 +17,16 @@ As for the spectacle of the battle and showdowns, while not at the scale of Lord
 
 This is quite possibly the worst movie ever made. Even my 4 year old hated it and wanted to leave. I was using it as an excuse to nap in air-conditioning. Alas, it was so bad that my daughter insisted we leave. Not really a surprise for a Steven Paul film, but Im saddened that Jon Voights career has fallen so low...and Scott Baio??? ARGH! Believe me, Ive had to sit through some bad kid flix, but this one is an all time loser. There is a woman with very large lips (Vanessa Angel) who almost makes it bearable, just for the pure fascination of watching whether or not they will explode. However, my suggestion would be that all prints of this film be sent to President Bush so he can see how harmful his education budget cuts have been.
 
+The weather was bad.
+
+The weather was not bad.
+
+The weather was not good.  
 
 
+The library was quiet today.
+
+The library was too quiet today.
 
 
 ## Final Presentation: 
